@@ -96,7 +96,14 @@ def get_max_salary(path):
     int
         The maximum salary paid out of all job opportunities
     """
-    pass
+    jobs = read(path)
+    jobs_salaries = {int(job["max_salary"])
+                     for job in jobs
+                     if job["max_salary"].isdigit()}
+
+    return max(jobs_salaries)
+# https://www.w3schools.com/python/ref_string_isdigit.asp
+# used to avoid blank values
 
 
 def get_min_salary(path):
