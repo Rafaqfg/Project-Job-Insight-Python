@@ -5,7 +5,7 @@
 :partying_face: That's my first Python project! :tada:
 
 ## Stack
-Development: Python <br>
+Development: Python, Jinja <br>
 Test: Pytest <br>
 Deploy: Flask
 
