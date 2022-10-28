@@ -76,7 +76,7 @@ def list_jobs():
 
 
 @bp.route("/job/<index>")
-def job_details(index):
+def job(index):
     jobs = read("src/jobs.csv")
     job_details = get_job(jobs, index)
     return render_template("job.jinja2", job=job_details)
