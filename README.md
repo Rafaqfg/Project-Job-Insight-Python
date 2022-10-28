@@ -1,10 +1,23 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# :construction: README under construction ! :construction:
+
+## Developed by
+- [@Rafaqfg](https://www.linkedin.com/in/rafaelqfg/)<br>
+:partying_face: That's my first Python project! :tada:
+
+## Stack
+Development: Python <br>
+Test: Pytest <br>
+Deploy: Flask
+
+## main skills covered in this project:
+- Use Python's interactive terminal. <br>
+- Use conditional and repeating structures. <br>
+- Use Python built-in functions. <br>
+- Use exception handling. <br>
+- Perform file manipulation. <br>
+- Write functions. <br>
+- Write tests with Pytest. <br>
+- Write your own modules and import them into other code. <br>
+
+
+### Soon you will find in this readme how to run the project. Until then, check out the src folder to see the code! :monocle_face:
