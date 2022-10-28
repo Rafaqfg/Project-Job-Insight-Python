@@ -152,7 +152,19 @@ def matches_salary_range(job, salary):
         If `job["min_salary"]` is greather than `job["max_salary"]`
         If `salary` isn't a valid integer
     """
-    pass
+    if (
+        "max_salary" | "min_salary" not in job.keys() or
+        (
+            float(job["max_salary"]) |
+            float(job["min_salary"] |
+                  float(salary)) is False
+        ) or
+        job["min_salary"] > job["max_salary"]
+    ):
+        raise ValueError
+    if job["min_salary"] <= salary <= ["max_salary"]:
+        return True
+    return False
 
 
 def filter_by_salary_range(jobs, salary):
