@@ -153,16 +153,15 @@ def matches_salary_range(job, salary):
         If `salary` isn't a valid integer
     """
     if (
-        "max_salary" | "min_salary" not in job.keys() or
-        (
-            float(job["max_salary"]).is_integer() is False |
-            float(job["min_salary"]).is_integer() is False |
-            float(salary).is_integer() is False
-        ) or
+        "max_salary" not in job.keys() or
+        "min_salary" not in job.keys() or
+        (type(job["max_salary"]) is not int) or
+        (type(job["min_salary"]) is not int) or
+        (type(salary) is not int) or
         job["min_salary"] > job["max_salary"]
     ):
         raise ValueError
-    if job["min_salary"] <= salary <= ["max_salary"]:
+    if job["min_salary"] <= salary <= job["max_salary"]:
         return True
     return False
 
