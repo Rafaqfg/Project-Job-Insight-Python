@@ -155,9 +155,9 @@ def matches_salary_range(job, salary):
     if (
         "max_salary" | "min_salary" not in job.keys() or
         (
-            float(job["max_salary"]) |
-            float(job["min_salary"] |
-                  float(salary)) is False
+            float(job["max_salary"]).is_integer() |
+            float(job["min_salary"]).is_integer() |
+            float(salary).is_integer() is False
         ) or
         job["min_salary"] > job["max_salary"]
     ):
